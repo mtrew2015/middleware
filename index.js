@@ -3,7 +3,7 @@
 
 const express = require('express')
 const server = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 const helmet = require('helmet');
 const morgan = require('morgan');
 const customMW = require('./custom_middleware.js')
